@@ -16,5 +16,4 @@ jobs:
       azcliversion: latest 
       inlineScript: |
        echo "Create a storage account"
-       az storage account create -n "sa"${{github.run_id}} -g ${{vars.RG_NAME}} -l eastus --sku 
-Standard_LRS --kind StorageV2
+       az storage account create -n "sa"${{github.run_id}} -g ${{vars.RG_NAME}} -l eastus --sku Standard_LRS --kind StorageV2
